@@ -76,7 +76,7 @@
     #scoretitle{
         font-size: 1.4em;
     }
-    #gridlayout[_ngcontent-c1] {
+    #gridlayout {
         display: grid;
         display: -ms-grid;
         grid-column-gap: 53px;
