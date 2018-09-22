@@ -1,0 +1,46 @@
+<section id="loginpage">
+    <div id="login_div">
+     <div id="login_whole_div">
+       <form #registerform="ngForm" (ngSubmit)="postGegisterData(registerform.value)">
+         <div>
+           <div id="logintextdiv">
+           <h1>Register</h1>
+           </div>
+           <div id="textbox">
+             <input type="text" placeholder=" Name" name="name" ngModel/>
+           </div>
+           <div id="textbox">
+             <input type="text" placeholder=" Email" name="email" ngModel/>
+           </div>
+           <div id="textbox">
+             <input type="text" placeholder=" Mobile" name="mobile" ngModel/>
+           </div>
+           <div id="textbox">
+             <select id="genderdiv" ngModel name="gender"[(ngModel)]="genderdefault">
+               <option value="0" disabled selected>Select Gender</option>
+               <option value="1">Male</option>
+               <option value="2">Female</option>
+               <option value="3">Others</option>
+             </select>
+           </div>
+           <div id="textbox">
+             <input type="password" placeholder=" Password" name="password" ngModel/>
+           </div>
+           <div id="button_div">
+             <input type="submit" value="Register" id="submitbtn">
+           </div>
+           <div id="forgetpwd" class="py-2">
+             <p class="text-center">U have account?</p>
+           </div>
+         </div>
+       </form>
+       <div class="alert alert-danger" *ngIf="showerror">
+          {{errormsg}}
+        </div>
+        <div class="alert alert-success" *ngIf="showerror1">
+            {{successmsg}}
+          </div>
+     </div>
+    </div>
+  </section>
+  

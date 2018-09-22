@@ -1,0 +1,28 @@
+<section id="loginpage">
+    <div id="login_div">
+     <div id="login_whole_div">
+       <form #loginform="ngForm" (ngSubmit)="postTheLoginData(loginform.value)">
+         <div>
+           <div id="logintextdiv">
+           <h1>Login</h1>
+           </div>
+           <div id="textbox">
+              <i class="fa fa-user" aria-hidden="true" style="font-size:17px;"></i>
+             <input type="text" placeholder=" Mobile Number" name="mobile" #mobile="ngModel" ngModel />
+           </div>
+           <div id="textbox">
+              <i class="fa fa-lock" aria-hidden="true" style="font-size:17px;"></i>
+             <input type="password" placeholder=" Password" name="password" ngModel/>
+           </div>
+           <div id="button_div">
+             <input type="submit" value="LogIn" id="submitbtn" [disabled]="!loginform.valid">
+           </div>
+           <div id="forgetpwd" class="py-2">
+             <p class="text-center">Forgot Password?</p>
+           </div>
+         </div>
+       </form>
+     </div>
+    </div>
+  </section>
+  

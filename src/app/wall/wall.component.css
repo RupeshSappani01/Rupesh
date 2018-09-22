@@ -1,0 +1,228 @@
+@font-face{
+    font-family: arialblack;
+    src: url(../../assets/fonts/ArialBlack.ttf);
+    font-weight: 100;
+}
+#section{
+    background-color: lightgrey;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top:5.5%;
+}
+#trending{
+    width: 1em;
+    height: 1em;
+}
+#followbtn111{
+    background-color: #00B0F0;
+    color: white;
+    padding: 5px 10px;
+}
+#profilename_follow{
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+#profilename_follow li{
+    display: inline;
+}
+#profilename_follow li:nth-child(2){
+    display: inline;
+    margin-left:0.5em;
+}
+#profilename_follow li:nth-child(3){
+    display: inline;
+    margin-left:1em;
+}
+#clearfloat{
+    clear: both;
+}
+#moreicon li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+    margin-top: 1.3em;
+    margin-right: 0.8em;
+}
+.container11{
+    padding: 1em 1.4em;
+}
+#postimage{
+    max-width:100%;
+    height: 282px;
+    margin-left: 0.2em;
+}
+#trendingtext{
+    font-size: 4.9em;
+}
+#followprofile{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+#profilename{
+     line-height: 5em;
+     margin-left: 0%;
+} 
+#followbtn{
+line-height: 5.2em;
+font-family: arialblack;
+margin-left: 2em;
+}
+#fghjjk{
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 3fr 5fr;
+    grid-column-gap: 20px;
+}
+#profilediv{
+    float: left;
+}
+#followbtn a{
+    background-color: #00B0F0;
+    color: white;
+    padding: 5px 10px;
+}
+#title_desc h6{
+    max-width:85%;
+}
+#postbackground{
+    background-color: white;
+    padding: 2.5em 0em;
+    width: 100%;
+    margin-left: 0%;
+}
+#icondiv1{
+ margin-left: 54%;
+}
+#image_div{
+    float: left;
+}
+#profilediv11{
+    padding: 1em 0em 1em 3em;
+}
+#title_desc11{
+    max-width: 85%;
+}
+#verticalelipse11{
+    margin-left: 71%;
+}
+
+@media only screen and (max-width:768px){
+    #icondiv1{
+        margin-left: 25%;
+       }
+       #verticalelipse11{
+        margin-left: 51%;
+    } 
+    #title_desc[_ngcontent-c1] h6[_ngcontent-c1] {
+        max-width: 85%;
+    } 
+    #followbtn[_ngcontent-c1] a[_ngcontent-c1] {
+        background-color: #00B0F0;
+        color: white;
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    #moreicon li{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: right;
+        margin-top: 0.2em;
+        margin-right: 0.8em;
+    }
+
+}
+@media only screen and (max-width:480px){
+    #fghjjk{
+        display: grid;
+        display: -ms-grid;
+        grid-template-areas: 'profile'
+                              'image';
+        grid-template-columns: 1fr;
+        grid-column-gap: 13px;
+    }
+    #trendingtext[_ngcontent-c1] {
+        font-size: 2em;
+    }
+    #section{
+        margin-top: 17.5%;
+    }
+    #image_div{
+        grid-area: image;
+    }
+    #profilediv{
+        grid-area: profile;
+        padding-left: 1.2em;
+    }
+    #followprofile[_ngcontent-c1] {
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+    }
+    .container11{
+        padding: 0.5em;
+    }
+    #followbtn[_ngcontent-c1] {
+        line-height: 5.2em;
+        font-family: arialblack;
+        margin-left: 1em;
+    }
+    #verticalelipse{
+        width: 7%;
+    }
+    #verticalelipse11{
+        width: 7%;
+    }
+    #icondiv{
+        margin-left: -28%;
+    }
+    #icondiv1[_ngcontent-c1] {
+        margin-left: 33%;
+    }
+    #profilediv11[_ngcontent-c1] {
+        padding-left: 1em;
+    }
+    #moreicon li{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: right;
+        margin-top: 0.6em;
+        margin-right: 0em;
+    }
+    #morepngicon[_ngcontent-c1] {
+        width: 69%;
+    }
+    #profilename_follow li img{
+        margin-left: -0.35em;
+    }
+    #postbackground{
+        background-color: white;
+        padding: 1em 0em;
+        width: 100%;
+        margin-left: 0%;
+    }
+    #section[_ngcontent-c1] {
+        margin-top: 16.5%;
+    }
+    #followbtn111{
+        background-color: #00B0F0;
+        color: white;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    #clearfloat[_ngcontent-c1] {
+        clear: both;
+        padding: 0.2em 0;
+    }
+    #title_desc[_ngcontent-c1][_ngcontent-c1] h6[_ngcontent-c1][_ngcontent-c1] {
+        max-width: 85%;
+        margin-top: -0.2em;
+    }
+    #morepngicon{
+        width: 7%;
+    }
+}

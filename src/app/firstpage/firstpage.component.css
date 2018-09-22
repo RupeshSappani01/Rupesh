@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+#fistpagediv{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#firstbgimg{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 500;
+    background-color:rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;
+    background-attachment: fixed;
+    height:100vh;
+    background-position:100% 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+#btnsignup{
+    padding: 0.4em 4em;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid blanchedalmond;
+}
+#btnlogin{
+    border-radius: 50px;
+    padding: 0.5em 4em;
+    border: none;
+    background-color: #F80217;
+}
+#btnsignup:hover{
+    background-color: white;
+    color: black;
+}
+
+#btnlogin:hover{
+    background-color:black;
+    color: white;
+}
+@media only screen and (max-width: 480px) {
+    #btnlogin{
+       margin-top: 1em;
+    } 
+}

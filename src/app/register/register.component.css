@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+#loginpage {
+    background-image: url(https://wallpapertag.com/wallpaper/full/7/2/6/115355-best-background-1920x1200-ipad-retina.jpg);
+    /* background-color: lightslategrey; */
+    background-attachment: fixed;
+    height:100vh;
+    background-position:100% 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+#login_whole_div {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#genderdiv{
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: whitesmoke;
+}
+#textbox {
+    margin:1em 0; 
+    border: 1px solid white;
+    padding:0.5em;
+    background-color:whitesmoke;
+}
+#textbox input,select {
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius:3px;
+    width:15em;
+    color: rgba(0, 0, 0, 0.6);
+    background-color:whitesmoke;
+    border:none;
+    outline: none;
+}
+#textbox i {
+    padding:0.3em 0.5em;
+    padding-left:0.1em;
+}
+#button_div input[type="submit"] {
+    width:100%;
+}
+#submitbtn {
+    font-family: 'Roboto Condensed', sans-serif;
+    transition:0.5s;
+    background-color:mediumseagreen;
+    color: white;
+    border: none;
+    outline:none;
+    border-radius:3px;
+    padding:0.5em;
+}
+#logintextdiv {
+    color:white;
+    margin-bottom:1.5em;
+}
+#logintextdiv h1 {
+    padding:0.2em;
+    border-bottom:1px solid lightseagreen;
+}
+#submitbtn:hover{
+    background-color:black;
+    cursor: pointer;
+}
+#forgetpwd p{
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:500;
+}
+
+#forgetpwd p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
