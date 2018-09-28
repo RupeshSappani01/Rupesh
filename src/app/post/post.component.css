@@ -1,0 +1,116 @@
+#section_div{
+    clear: both;
+    background-color: lightgrey;
+}
+#post_div{
+    margin-top: 5em;
+    padding: 1.2em;
+}
+#post_display_div{
+    padding: 1em 1.5em;
+    background-color: white;
+    width: 54%;
+}
+#post_display_div input,button,textarea{
+    display: block;
+}
+#fileuoload{
+ border: none;
+ background-color: white;
+}
+#addpicplace{
+    background-color: lightgrey;
+    width: 100%;
+    padding: 5.5em 0;
+}
+#addpicplace h1{
+  padding-left: 2em;
+}
+#postbtn{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.2em 3em;
+    margin-top: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Title{
+margin-top: 30px;
+margin-left: 14px;
+border: none;
+outline: none;
+padding-top: 1em;
+width: 100%;
+}
+#Description{   
+border: none;
+margin-top: 10px;
+margin-left: 13px;
+width: 100%;
+outline: none;
+resize: none;
+}
+#Title::placeholder{
+    color: black;
+    font-size: 2.5em;
+}
+#Description::placeholder{
+    color: black;
+    font-size: 1.5em;
+}
+button:disabled{
+    cursor: no-drop;
+}
+
+@media only screen and (max-width:813px){
+    #post_display_div{
+        padding: 1em 1.5em;
+        background-color: white;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:480px){
+    #post_display_div{
+        padding: 1em 1.5em;
+        background-color: white;
+        width: 100%;
+    }
+    #addpicplace[_ngcontent-c1] h1[_ngcontent-c1] {
+        padding-left: 1em;
+        font-size: 2em;
+    }
+    #addpicplace[_ngcontent-c1] {
+        background-color: lightgrey;
+        width: 100%;
+        padding: 3.5em 0;
+    }
+    #post_div[_ngcontent-c1] {
+        margin-top: 5em;
+        padding: 0 1.2em;
+    }
+    #Title::placeholder{
+        color: black;
+        font-size: 2em;
+    }
+    #Description::placeholder{
+        color: black;
+        font-size: 1em;
+    }
+    #postbtn[_ngcontent-c1] {
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0.2em 3em;
+        margin-top: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

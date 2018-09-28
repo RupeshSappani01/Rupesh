@@ -12,6 +12,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { TrendingComponent } from './trending/trending.component';
 import { WallComponent } from './wall/wall.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
+import { PostComponent } from './post/post.component';
+import { YourprofileComponent } from './yourprofile/yourprofile.component';
+import { SafeurlPipe } from './safeurl.pipe';
 const approutes:Routes=[
   {
     path:'',redirectTo:'index',pathMatch:'full'
@@ -36,6 +39,15 @@ const approutes:Routes=[
   },
   {
     path:'scoreboard',component:ScoreboardComponent
+  },
+  {
+    path:'post',component: PostComponent
+  },
+  {
+    path:'profile',component:ProfileComponent
+  },
+  {
+    path:'yourprofile',component:YourprofileComponent
   }
 ]
 @NgModule({
@@ -48,7 +60,10 @@ const approutes:Routes=[
     ProfileComponent,
     TrendingComponent,
     WallComponent,
-    ScoreboardComponent
+    ScoreboardComponent,
+    PostComponent,
+    YourprofileComponent,
+    SafeurlPipe
   ],
   imports: [
     BrowserModule,

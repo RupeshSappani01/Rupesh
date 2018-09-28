@@ -15,7 +15,7 @@
 #followbtn111{
     background-color: #00B0F0;
     color: white;
-    padding: 5px 10px;
+    padding: 3px 12px;
 }
 #profilename_follow{
     float: left;
@@ -29,6 +29,7 @@
 #profilename_follow li:nth-child(2){
     display: inline;
     margin-left:0.5em;
+    font-size: 14px;
 }
 #profilename_follow li:nth-child(3){
     display: inline;
@@ -42,23 +43,25 @@
     padding: 0;
     list-style-type: none;
     float: right;
-    margin-top: 1.3em;
-    margin-right: 0.8em;
+    margin-top: 0.48em;
+    margin-right: 0.3em;
 }
 .container11{
     padding: 1em 1.4em;
+    width: 54%;
 }
-#postimage{
-    max-width:100%;
-    height: 282px;
+#postimage {
+    max-width: 100%;
+    height: 285px;
     margin-left: 0.2em;
+    margin-top: 1em;
 }
 #trendingtext{
-    font-size: 4.9em;
+    font-size: 2.9em;
 }
 #followprofile{
-    width: 5em;
-    height: 5em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
 }
 #profilename{
@@ -74,15 +77,10 @@ margin-left: 2em;
     display: grid;
     display: -ms-grid;
     grid-template-columns: 3fr 5fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 15px;
 }
 #profilediv{
     float: left;
-}
-#followbtn a{
-    background-color: #00B0F0;
-    color: white;
-    padding: 5px 10px;
 }
 #title_desc h6{
     max-width:85%;
@@ -110,6 +108,10 @@ margin-left: 2em;
 }
 
 @media only screen and (max-width:768px){
+    .container11{
+        padding: 1em 1.4em;
+        width: 100%;
+    }
     #icondiv1{
         margin-left: 25%;
        }

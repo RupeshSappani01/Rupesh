@@ -1,0 +1,17 @@
+<div>
+  <app-profileheader></app-profileheader>
+</div>
+<div id="section_div">
+<div id="post_div">
+  <h1>Post</h1>
+  <div id="post_display_div">
+    <form #postdata="ngForm" (ngSubmit)="PostTheData(postdata)">
+    <input #file type="file" id="fileuoload" name="postimages" hidden (change)="UploadPostImage($event)" multiple ngModel/>
+    <div (click)="file.click()" id="addpicplace"><h1>+ Add Pic</h1></div>
+    <input type="text" placeholder="Title Max(30)" maxlength="30" id="Title" name="title" required ngModel/>
+    <textarea placeholder="Description (max 1000)" id="Description" rows="6" name="description" required ngModel></textarea>
+    <button id="postbtn" [disabled]="!postdata.valid">Post</button>
+    </form>
+  </div>
+</div>
+</div>

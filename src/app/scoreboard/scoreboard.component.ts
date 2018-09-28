@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegisterService } from '../servicefiles/register.service';
 
 @Component({
   selector: 'app-scoreboard',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scoreboard.component.css']
 })
 export class ScoreboardComponent implements OnInit {
+  obj: any;
+  image: any;
 
-  constructor() { }
+  constructor(private RegisterService:RegisterService) { }
 
   ngOnInit() {
+  this.RegisterService.getImage().subscribe(data=>{
+    this.obj=data;
+    console.log(this.obj);
+  })
+
   }
 
 }

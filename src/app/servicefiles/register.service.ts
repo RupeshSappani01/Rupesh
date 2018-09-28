@@ -13,4 +13,7 @@ export class RegisterService {
   postTheLoginData(value){
     return this._http.post(`${this.BASEURL}login`,value);
   }
+  getImage(){
+    return this._http.get('http://localhost:3000/getfeeds/images');
+  }
 }

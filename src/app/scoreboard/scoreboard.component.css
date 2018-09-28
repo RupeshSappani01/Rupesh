@@ -4,20 +4,25 @@
     font-weight: 100;
 }
 .section_div{
-    margin-top: 5.5em;
+    margin-top: 4.5em;
     background-color: lightgrey;
-    padding: 0 1.65em;
+    padding: 2em 1.65em;
+}
+#scoretitle{
+    font-size: 2.3em;
 }
 #gridlayout h6{
     line-height: 12px;
+    font-size: 14px;
 }
 #wertyui{
     background-color: white;
     max-height: 100%;
+    width: 54%;
     padding: 2em 0;
 }
 #you{
-    margin-right: 3.9em;
+    margin-right: 4.18em;
     color: red;
 }
 #you1{
@@ -25,6 +30,7 @@
 }
 #scorepoints{
     clear: both;
+    font-family: soueceserifpro;
 }
 #Scoreboard_div{
     padding: 0.5em 0;
@@ -46,8 +52,8 @@
 #gridlayout{
     display: grid;
     display: -ms-grid;
-    grid-column-gap: 100px;
-    padding: 3em 0;
+    grid-column-gap: 174px;
+    padding: 2.5em 0;
     grid-template-columns: 1fr 1fr;
 }
 @media only screen and (max-width:768px){
@@ -55,6 +61,12 @@
         margin-top:5.7em;
         background-color: lightgrey;
         padding: 0 1.65em;
+    }
+    #wertyui{
+        background-color: white;
+        max-height: 100%;
+        width: 100%;
+        padding: 2em 0;
     }
 }
 @media only screen and (max-width:480px){
@@ -68,13 +80,19 @@
         background-color: lightgray;
         font-family: soueceserifpro;
     }
+    #wertyui{
+        background-color: white;
+        max-height: 100%;
+        width: 100%;
+        padding: 2em 0;
+    }
     #Scoreboard_div a{
         padding: 0.52em 0.7em;
         border-right: 4px solid black;
         font-size: 11px;
     }
     #scoretitle{
-        font-size: 1.4em;
+        font-size: 1em;
     }
     #gridlayout {
         display: grid;
@@ -84,6 +102,10 @@
         -ms-grid-columns: 1fr 1fr;
         margin-left: 1.2em;
         grid-template-columns: 1fr 1fr;
+    }
+    #gridlayout[_ngcontent-c1] h6[_ngcontent-c1] {
+        line-height: 12px;
+        font-size: 12px;
     }
     .section_div[_ngcontent-c1] {
         margin-top: 4.7em;
