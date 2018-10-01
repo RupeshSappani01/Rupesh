@@ -52,7 +52,8 @@
 }
 #postimage {
     max-width: 100%;
-    height: 285px;
+    width:100%;
+    height: 250px;
     margin-left: 0.2em;
     margin-top: 1em;
 }
@@ -63,6 +64,10 @@
     width: 3em;
     height: 3em;
     border-radius: 50%;
+}
+#videodisplay{
+    margin-left: 0.2em;
+    margin-top: 1.5em
 }
 #profilename{
      line-height: 5em;
@@ -85,6 +90,10 @@ margin-left: 2em;
 #title_desc h6{
     max-width:85%;
 }
+#morepngicon{
+    width:1.5em;
+    margin-right: 0.4em;
+}
 #postbackground{
     background-color: white;
     padding: 2.5em 0em;
@@ -98,7 +107,7 @@ margin-left: 2em;
     float: left;
 }
 #profilediv11{
-    padding: 1em 0em 1em 3em;
+    padding: 0.3em 0em 0.3em 3em;
 }
 #title_desc11{
     max-width: 85%;

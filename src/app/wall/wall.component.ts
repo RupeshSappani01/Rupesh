@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegisterService } from '../servicefiles/register.service';
 
 @Component({
   selector: 'app-wall',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./wall.component.css']
 })
 export class WallComponent implements OnInit {
+  wallpost:any;
 
-  constructor() { }
+  constructor(private RegisterService:RegisterService) { }
 
   ngOnInit() {
+    this.RegisterService.getImage().subscribe(data=>{
+      this.wallpost=data;
+      console.log(this.wallpost);
+    })
   }
 
 }

@@ -13,10 +13,10 @@ export class ScoreboardComponent implements OnInit {
   constructor(private RegisterService:RegisterService) { }
 
   ngOnInit() {
-  this.RegisterService.getImage().subscribe(data=>{
-    this.obj=data;
-    console.log(this.obj);
-  })
+  // this.RegisterService.getImage().subscribe(data=>{
+  //   this.obj=data;
+  //   console.log(this.obj);
+  // })
 
   }
 

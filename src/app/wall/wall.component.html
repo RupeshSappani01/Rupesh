@@ -7,15 +7,22 @@
           <h1 id="trendingtext">Wall</h1>
         </div>
         <div  id="postbackground">
+          <div id="fask" *ngFor="let obj of wallpost?.value">
+            <div *ngIf="obj?.obj.wallimage.length===0&&obj?.obj.wallvideo===''then noimageandvideo else imageandvideo"></div>
+            <ng-template #imageandvideo>
           <div id="fghjjk">
            <div id="image_div">
-             <img src="../../assets/images/img3.jpg" id="postimage">
+             <img *ngIf="obj?.obj.wallimage.length!=0" [attr.src]="obj?.obj.wallimage[0] | safeurl" id="postimage">
+             <video *ngIf="obj?.obj.wallvideo!=''" width="100%" controls id="videodisplay">
+               <source [attr.src]="obj?.obj.wallvideo | safeurl">
+                video tag not support your browser
+             </video>
            </div>
            <div  id="profilediv">
               <div>
                 <ul id="profilename_follow">
-                  <li><img src="../../assets/images/img2.jpg"  id="followprofile"></li>
-                  <li>Neha Shukla</li>
+                  <li><img [attr.src]="obj?.obj.profile_img | safeurl"  id="followprofile"></li>
+                  <li>{{obj?.obj.UserName}}</li>
                   <li><a id="followbtn111">Follow</a></li>
                 </ul>
                 <ul id="moreicon">
@@ -25,12 +32,10 @@
               <div id="clearfloat">
               <div>
                 <div >
-                  <h1>Title Here</h1>
+                  <h1>{{obj?.obj.title}}</h1>
                 </div>
                 <div  id="title_desc">
-                    <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quo modi maiores blanditiis obcaecati tempora reprehenderit voluptas provident doloribus similique 
-                      illum voluptatibus excepturi nesciunt tenetur, 
-                      quod praesentium eligendi eos nulla.</h6>
+                    <h6>{{obj?.obj.description}}.</h6>
                   </div>
               </div>
               <div>
@@ -40,7 +45,7 @@
                   <div >
                    <div>
                      <div>
-                        <h6><span>Likes(260)</span>&nbsp;&nbsp;&nbsp;<span>Comments(72)</span></h6>
+                        <h6><span>Likes<span>({{obj?.obj.Likes}})</span></span>&nbsp;&nbsp;&nbsp;<span>Comments<span>({{obj?.obj.Comments}})</span></span></h6>
                      </div>
                    </div>
                   </div>
@@ -48,11 +53,13 @@
                  </div>
            </div>
         </div>
-        <div  id="profilediv11">
+            </ng-template>
+            <ng-template #noimageandvideo>
+        <div  id="profilediv11" *ngIf="obj?.obj.wallimage.length==0">
             <div>
               <ul id="profilename_follow">
                 <li><img src="../../assets/images/img2.jpg"  id="followprofile"></li>
-                <li>Neha Shukla</li>
+                <li>{{obj?.obj.UserName}}</li>
                 <li><a id="followbtn111">Follow</a></li>
               </ul>
               <ul id="moreicon">
@@ -62,12 +69,10 @@
             <div id="clearfloat">
             <div>
               <div >
-                <h1>Title Here</h1>
+                <h1>{{obj?.obj.title}}</h1>
               </div>
               <div  id="title_desc">
-                  <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quo modi maiores blanditiis obcaecati tempora reprehenderit voluptas provident doloribus similique 
-                    illum voluptatibus excepturi nesciunt tenetur, 
-                    quod praesentium eligendi eos nulla.</h6>
+                  <h6>{{obj?.obj.description}}..</h6>
                 </div>
             </div>
             <div>
@@ -77,13 +82,15 @@
                 <div >
                  <div>
                    <div>
-                      <h6><span>Likes(260)</span>&nbsp;&nbsp;&nbsp;<span>Comments(72)</span></h6>
+                    <h6><span>Likes({{obj?.obj.Likes}})</span>&nbsp;&nbsp;&nbsp;<span>Comments({{obj?.obj.Comments}})</span></h6>
                    </div>
                  </div>
                 </div>
-               </div>
+                </div>
                </div>
          </div>
+        </ng-template>
+        </div>
         </div>
       </div>
     </section>

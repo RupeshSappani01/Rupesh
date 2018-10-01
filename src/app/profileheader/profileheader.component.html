@@ -1,12 +1,12 @@
 <section id="headerdivbg">
-  <header>
+  <header *ngFor="let obj of wallpost?.value">
      <ul>
        <li id="navigation_div">
          <a>Trending</a><a>Wall</a><a>Scoreboard</a>
         </li>
      </ul>
-     <ul id="profilediv">
-        <li><img src="../../assets/images/img2.jpg" id="profile_img"></li>
+     <ul id="profilediv" *ngIf="'5ba22218dc99e61e2ca4b65a'===obj?.obj.userid">
+        <li><img [attr.src]="obj?.obj.profile_img | safeurl" id="profile_img"></li>
          <li><img src="../../assets/images/money_coin.png" id="money_coin"></li>
      </ul>
   </header>
